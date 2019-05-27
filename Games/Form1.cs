@@ -23,6 +23,7 @@ namespace Games
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            our_direction = new Direction(0, 0);
             this.Text = "Mustafa Alparslan Pamuk || Snake Game";
             pb_snakeParts = new PictureBox[0];
             for (int i = 0; i < 3; i++)
@@ -30,6 +31,7 @@ namespace Games
                 Array.Resize(ref pb_snakeParts, pb_snakeParts.Length + 1); // burdaki her eklendiği zaman bunu bir arttır dizinini uzunluğu.
                 pb_snakeParts[i] = pb_add();
             }
+            timer1.Start();
         }
         private PictureBox pb_add()
         {
@@ -55,26 +57,34 @@ namespace Games
         {
             if (e.KeyCode == Keys.Up || e.KeyCode == Keys.W)
             {
-                our_direction = new Direction(0, -10);
-
+                if(our_direction._y != 10)
+                {
+                    our_direction = new Direction(0, -10);
+                }                
             }
 
             else if (e.KeyCode == Keys.Down || e.KeyCode == Keys.S)
             {
-                our_direction = new Direction(0, 10);
-
+                if (our_direction._y != -10)
+                {
+                    our_direction = new Direction(0, 10);
+                }                
             }
 
             else if (e.KeyCode == Keys.Left || e.KeyCode == Keys.A)
             {
-                our_direction = new Direction(-10, 0);
-
+                if (our_direction._x != 10)
+                {
+                    our_direction = new Direction(-10, 0);
+                }             
             }
 
             else if (e.KeyCode == Keys.Right || e.KeyCode == Keys.D)
             {
-                our_direction = new Direction(10, 0);
-
+                if (our_direction._x != -10)
+                {
+                    our_direction = new Direction(10, 0);
+                }
             }
         }
 

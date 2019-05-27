@@ -26,9 +26,15 @@ namespace Games
         public void Move(Direction direction)
         {
             Our_direction = direction;
-            if(direction != null)
+            if (direction._x == 0 && direction._y == 0)
             {
-                for (int i = snake_part.Length-1; i > 0; i--) // yılan başı bir şeyi takip etmeyecek ama arkadakiler öndekini takip edecek
+
+            }
+            else
+            {
+
+
+                for (int i = snake_part.Length - 1; i > 0; i--) // yılan başı bir şeyi takip etmeyecek ama arkadakiler öndekini takip edecek
                 {
                     snake_part[i] = new Snake_Parts(snake_part[i - 1].x_, snake_part[i - 1].y_); // birbirini takip edecek
                 }
