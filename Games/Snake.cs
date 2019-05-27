@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Drawing;
 
 namespace Games
 {
@@ -40,6 +41,11 @@ namespace Games
             Array.Resize(ref snake_part, snake_part.Length + 1);
             snake_part[snake_part.Length-1] = new Snake_Parts(snake_part[snake_part.Length-2].x_-Our_direction._x,snake_part [snake_part.Length - 2].y_ - Our_direction._y);
             snake_growth++;
+        }
+
+        public Point GetPos(int number)
+        {
+            return new Point(snake_part[number].x_, snake_part[number].y_);
         }
     }
 
