@@ -1,0 +1,10 @@
+C:\Users\alp_g\OneDrive\Desktop\Game Youtube\Games\Games\bin\Debug\Games.exe.config
+C:\Users\alp_g\OneDrive\Desktop\Game Youtube\Games\Games\bin\Debug\Games.exe
+C:\Users\alp_g\OneDrive\Desktop\Game Youtube\Games\Games\bin\Debug\Games.pdb
+C:\Users\alp_g\OneDrive\Desktop\Game Youtube\Games\Games\obj\Debug\Games.csprojAssemblyReference.cache
+C:\Users\alp_g\OneDrive\Desktop\Game Youtube\Games\Games\obj\Debug\Games.Form1.resources
+C:\Users\alp_g\OneDrive\Desktop\Game Youtube\Games\Games\obj\Debug\Games.Properties.Resources.resources
+C:\Users\alp_g\OneDrive\Desktop\Game Youtube\Games\Games\obj\Debug\Games.csproj.GenerateResource.cache
+C:\Users\alp_g\OneDrive\Desktop\Game Youtube\Games\Games\obj\Debug\Games.csproj.CoreCompileInputs.cache
+C:\Users\alp_g\OneDrive\Desktop\Game Youtube\Games\Games\obj\Debug\Games.exe
+C:\Users\alp_g\OneDrive\Desktop\Game Youtube\Games\Games\obj\Debug\Games.pdb
