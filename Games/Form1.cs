@@ -19,6 +19,9 @@ namespace Games
 
         Snake Our_snake = new Snake();
         Direction our_direction;
+        bool bait_exists = false;
+        Random random = new Random();
+        PictureBox pb_bait;
         PictureBox[] pb_snakeParts;
 
         private void Form1_Load(object sender, EventArgs e)
@@ -92,6 +95,30 @@ namespace Games
         {
             Our_snake.Move(our_direction);
             Pb_update();
+        }
+
+        public void create_bait()
+        {
+            PictureBox pb = new PictureBox();
+            pb.BackColor = Color.Red;
+            pb.Size = new Size(10, 10);
+            pb.Location = new Point(random.Next(panel1.Width / 10) * 10,random.Next(panel1.Height /10)*10);
+            pb_bait = pb;
+            bait_exists = true;
+            panel1.Controls.Add(pb);
+
+        }
+
+        public void bait_eaten()
+        {
+            if (Our_snake.GetPos(0)==pb_bait.Location)
+            {
+                Our_snake.Grow();
+                Array.Resize(ref pb_snakeParts, pb_snakeParts.Length + 1);
+                pb_snakeParts[pb_snakeParts.Length - 1] = pb_add();
+                bait_exists = false;
+                panel1.Controls.Remove(pb_bait);
+            }
         }
     }
 }    
