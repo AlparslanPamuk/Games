@@ -53,6 +53,14 @@ namespace Games
         {
             return new Point(snake_part[number].x_, snake_part[number].y_);
         }
+
+        public int Snake_size
+        {
+            get
+            {
+                return snake_growth;
+            }
+        }
     }
 
     class Snake_Parts
