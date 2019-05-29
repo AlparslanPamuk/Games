@@ -1,0 +1,10 @@
+C:\Users\alp_g\OneDrive\Desktop\Game Youtube\Games\GlowHockey\bin\Debug\GlowHockey.exe.config
+C:\Users\alp_g\OneDrive\Desktop\Game Youtube\Games\GlowHockey\bin\Debug\GlowHockey.exe
+C:\Users\alp_g\OneDrive\Desktop\Game Youtube\Games\GlowHockey\bin\Debug\GlowHockey.pdb
+C:\Users\alp_g\OneDrive\Desktop\Game Youtube\Games\GlowHockey\obj\Debug\GlowHockey.csprojAssemblyReference.cache
+C:\Users\alp_g\OneDrive\Desktop\Game Youtube\Games\GlowHockey\obj\Debug\GlowHockey.Form1.resources
+C:\Users\alp_g\OneDrive\Desktop\Game Youtube\Games\GlowHockey\obj\Debug\GlowHockey.Properties.Resources.resources
+C:\Users\alp_g\OneDrive\Desktop\Game Youtube\Games\GlowHockey\obj\Debug\GlowHockey.csproj.GenerateResource.cache
+C:\Users\alp_g\OneDrive\Desktop\Game Youtube\Games\GlowHockey\obj\Debug\GlowHockey.csproj.CoreCompileInputs.cache
+C:\Users\alp_g\OneDrive\Desktop\Game Youtube\Games\GlowHockey\obj\Debug\GlowHockey.exe
+C:\Users\alp_g\OneDrive\Desktop\Game Youtube\Games\GlowHockey\obj\Debug\GlowHockey.pdb

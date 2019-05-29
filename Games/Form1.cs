@@ -27,6 +27,7 @@ namespace Games
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            label2.Text = score.ToString();
             this.Text = "Mustafa Alparslan Pamuk || Snake Game";
             New_game();
 
