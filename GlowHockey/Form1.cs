@@ -17,7 +17,7 @@ namespace GlowHockey
             InitializeComponent();
         }
 
-        int yerX = 5, yerY = 5, puan = 0;
+        int yerX = -5, yerY = 5, puan = 0;
         private void CarpmaOlayı()
         {
             //Player 2 hareket
@@ -43,6 +43,33 @@ namespace GlowHockey
             {
                 yerX = yerX * -1;
             }
+
+            //sol kenara çarpma 
+            else if (ball.Left <= label1.Right)
+            {
+                yerX = yerX * -1;
+            }
+
+            // sol alt kenar
+            else if (ball.Bottom >= label3.Top && ball.Left <= label3.Right)
+            {
+                yerY = yerY * -1;
+            }
+
+            //sağ alt kenar
+            else if (ball.Bottom >= label4.Top && ball.Right >= label4.Left)
+            {
+                yerY = yerY * -1;
+            }
+        }
+
+        private void Game_Over(object sender, EventArgs e)
+        {
+            if (ball.Top >= label4.Bottom)
+            {
+                timer1.Stop();
+                MessageBox.Show("Game Over!");
+            }
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -63,6 +90,7 @@ namespace GlowHockey
         private void timer1_Tick(object sender, EventArgs e)
         {
             CarpmaOlayı();
+            Game_Over(sender, e);
             ball.Location = new Point(ball.Location.X + yerX, ball.Location.Y + yerY);
         }
 

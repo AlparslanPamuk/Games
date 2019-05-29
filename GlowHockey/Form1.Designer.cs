@@ -50,8 +50,8 @@
             this.label15 = new System.Windows.Forms.Label();
             this.lbltoppoint = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.lblannouncement = new System.Windows.Forms.Label();
             this.btnplay = new System.Windows.Forms.Button();
+            this.lblannouncement = new System.Windows.Forms.Label();
             this.lblcan = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.panel1.SuspendLayout();
@@ -77,7 +77,7 @@
             // 
             // kontrol
             // 
-            this.kontrol.Location = new System.Drawing.Point(315, 547);
+            this.kontrol.Location = new System.Drawing.Point(305, 518);
             this.kontrol.Name = "kontrol";
             this.kontrol.Size = new System.Drawing.Size(156, 55);
             this.kontrol.TabIndex = 2;
@@ -250,15 +250,6 @@
             this.panel1.Size = new System.Drawing.Size(411, 210);
             this.panel1.TabIndex = 20;
             // 
-            // lblannouncement
-            // 
-            this.lblannouncement.AutoSize = true;
-            this.lblannouncement.Location = new System.Drawing.Point(141, 63);
-            this.lblannouncement.Name = "lblannouncement";
-            this.lblannouncement.Size = new System.Drawing.Size(54, 17);
-            this.lblannouncement.TabIndex = 0;
-            this.lblannouncement.Text = "label10";
-            // 
             // btnplay
             // 
             this.btnplay.Location = new System.Drawing.Point(144, 132);
@@ -267,6 +258,15 @@
             this.btnplay.TabIndex = 1;
             this.btnplay.Text = "button1";
             this.btnplay.UseVisualStyleBackColor = true;
+            // 
+            // lblannouncement
+            // 
+            this.lblannouncement.AutoSize = true;
+            this.lblannouncement.Location = new System.Drawing.Point(141, 63);
+            this.lblannouncement.Name = "lblannouncement";
+            this.lblannouncement.Size = new System.Drawing.Size(54, 17);
+            this.lblannouncement.TabIndex = 0;
+            this.lblannouncement.Text = "label10";
             // 
             // lblcan
             // 
@@ -279,6 +279,7 @@
             // 
             // timer1
             // 
+            this.timer1.Interval = 10;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // Form1
