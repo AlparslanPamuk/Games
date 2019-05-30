@@ -17,7 +17,8 @@ namespace GlowHockey
             InitializeComponent();
         }
 
-        int yerX = -5, yerY = 5, puan = 0;
+        int yerX = -5, yerY = 5, puan = 0, Can = 3;
+
         private void CarpmaOlayı()
         {
             //Player 2 hareket
@@ -67,9 +68,23 @@ namespace GlowHockey
         {
             if (ball.Top >= label4.Bottom)
             {
-                timer1.Stop();
-                MessageBox.Show("Game Over!");
+                if (Can > 0)
+                {
+                    timer1.Stop();
+                    Can--;
+                    timer2.Stop();
+                    MessageBox.Show("Game Over! Remaining Change =>" + Can.ToString());
+                    Form1_Load(sender, e);
+                }
+                if (Can == 0)
+                {
+                    timer1.Stop();
+                    timer2.Stop();
+                    MessageBox.Show("Game Over!", "Mustafa Alparslan Pamuk || Glow Hockey Game",MessageBoxButtons.OK,MessageBoxIcon.Information);
+                    Application.Exit();
+                }
             }
+            lblcan.Text = Can.ToString();
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -80,6 +95,11 @@ namespace GlowHockey
         private void label3_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void top_basa()
+        {
+            ball.Location = new Point(358, 300);
         }
 
         private void btnMe_MouseMove(object sender, MouseEventArgs e)
@@ -96,6 +116,7 @@ namespace GlowHockey
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            top_basa();
             timer1.Enabled = true;
         }
     }
