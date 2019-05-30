@@ -262,26 +262,30 @@
             this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.panel1.Controls.Add(this.btnplay);
             this.panel1.Controls.Add(this.lblannouncement);
-            this.panel1.Location = new System.Drawing.Point(1086, 237);
+            this.panel1.Location = new System.Drawing.Point(1150, 278);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(411, 210);
             this.panel1.TabIndex = 20;
+            this.panel1.Visible = false;
             // 
             // btnplay
             // 
-            this.btnplay.Location = new System.Drawing.Point(144, 132);
+            this.btnplay.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnplay.Location = new System.Drawing.Point(144, 112);
             this.btnplay.Name = "btnplay";
-            this.btnplay.Size = new System.Drawing.Size(75, 23);
+            this.btnplay.Size = new System.Drawing.Size(104, 51);
             this.btnplay.TabIndex = 1;
-            this.btnplay.Text = "button1";
+            this.btnplay.Text = "Play!";
             this.btnplay.UseVisualStyleBackColor = true;
+            this.btnplay.Click += new System.EventHandler(this.btnplay_Click);
             // 
             // lblannouncement
             // 
             this.lblannouncement.AutoSize = true;
-            this.lblannouncement.Location = new System.Drawing.Point(141, 63);
+            this.lblannouncement.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblannouncement.Location = new System.Drawing.Point(98, 54);
             this.lblannouncement.Name = "lblannouncement";
-            this.lblannouncement.Size = new System.Drawing.Size(54, 17);
+            this.lblannouncement.Size = new System.Drawing.Size(76, 28);
             this.lblannouncement.TabIndex = 0;
             this.lblannouncement.Text = "label10";
             // 
@@ -293,14 +297,18 @@
             this.lblcan.ForeColor = System.Drawing.Color.FloralWhite;
             this.lblcan.Location = new System.Drawing.Point(974, 602);
             this.lblcan.Name = "lblcan";
-            this.lblcan.Size = new System.Drawing.Size(99, 28);
+            this.lblcan.Size = new System.Drawing.Size(44, 28);
             this.lblcan.TabIndex = 21;
-            this.lblcan.Text = "Top Point";
+            this.lblcan.Text = "X 3";
             // 
             // timer1
             // 
             this.timer1.Interval = 10;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // timer2
+            // 
+            this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
             // 
             // Form1
             // 
@@ -308,7 +316,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.SystemColors.Desktop;
-            this.ClientSize = new System.Drawing.Size(1134, 681);
+            this.ClientSize = new System.Drawing.Size(1102, 681);
             this.Controls.Add(this.lblcan);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.lbltoppoint);
