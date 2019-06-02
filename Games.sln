@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SnakeGame", "Games\SnakeGam
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GlowHockey", "GlowHockey\GlowHockey.csproj", "{7FFE0466-C86F-405F-B77F-AB1C253A8F67}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarRacing", "CarRacing\CarRacing.csproj", "{A777E993-2E43-4B19-8617-319980CF00E4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{7FFE0466-C86F-405F-B77F-AB1C253A8F67}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7FFE0466-C86F-405F-B77F-AB1C253A8F67}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7FFE0466-C86F-405F-B77F-AB1C253A8F67}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A777E993-2E43-4B19-8617-319980CF00E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A777E993-2E43-4B19-8617-319980CF00E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A777E993-2E43-4B19-8617-319980CF00E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A777E993-2E43-4B19-8617-319980CF00E4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
