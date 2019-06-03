@@ -137,9 +137,9 @@
             // enemy1
             // 
             this.enemy1.Image = ((System.Drawing.Image)(resources.GetObject("enemy1.Image")));
-            this.enemy1.Location = new System.Drawing.Point(64, 137);
+            this.enemy1.Location = new System.Drawing.Point(72, 137);
             this.enemy1.Name = "enemy1";
-            this.enemy1.Size = new System.Drawing.Size(41, 73);
+            this.enemy1.Size = new System.Drawing.Size(33, 73);
             this.enemy1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.enemy1.TabIndex = 7;
             this.enemy1.TabStop = false;
@@ -147,9 +147,9 @@
             // enemy2
             // 
             this.enemy2.Image = ((System.Drawing.Image)(resources.GetObject("enemy2.Image")));
-            this.enemy2.Location = new System.Drawing.Point(239, 137);
+            this.enemy2.Location = new System.Drawing.Point(240, 137);
             this.enemy2.Name = "enemy2";
-            this.enemy2.Size = new System.Drawing.Size(41, 73);
+            this.enemy2.Size = new System.Drawing.Size(40, 73);
             this.enemy2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.enemy2.TabIndex = 8;
             this.enemy2.TabStop = false;
@@ -159,7 +159,7 @@
             this.enemy3.Image = ((System.Drawing.Image)(resources.GetObject("enemy3.Image")));
             this.enemy3.Location = new System.Drawing.Point(271, 228);
             this.enemy3.Name = "enemy3";
-            this.enemy3.Size = new System.Drawing.Size(41, 73);
+            this.enemy3.Size = new System.Drawing.Size(33, 73);
             this.enemy3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.enemy3.TabIndex = 9;
             this.enemy3.TabStop = false;

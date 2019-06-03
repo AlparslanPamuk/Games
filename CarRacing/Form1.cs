@@ -63,6 +63,27 @@ namespace CarRacing
                 coin1.Location = new Point(x, 0);
             }
             else coin1.Top += speed;
+
+            if (coin2.Top >= 500)
+            {
+                x = r.Next(0, 100);
+                coin2.Location = new Point(x, 0);
+            }
+            else coin2.Top += speed;
+
+            if (coin3.Top >= 500)
+            {
+                x = r.Next(50, 150);
+                coin3.Location = new Point(x, 0);
+            }
+            else coin3.Top += speed;
+
+            if (coin4.Top >= 500)
+            {
+                x = r.Next(0, 200);
+                coin4.Location = new Point(x, 0);
+            }
+            else coin4.Top += speed;
         }
             
 
@@ -115,13 +136,51 @@ namespace CarRacing
             }
         }
 
+        void coinsCollection()
+        {
+            if (car.Bounds.IntersectsWith(coin1.Bounds))
+            {
+                collectedCoin++;
+                label1.Text = "Coins=" + collectedCoin.ToString();
+                x = r.Next(0, 100);
+                coin1.Location = new Point(x, 0);
+            }
+
+            if (car.Bounds.IntersectsWith(coin2.Bounds))
+            {
+                collectedCoin++;
+                label1.Text = "Coins=" + collectedCoin.ToString();
+                x = r.Next(0, 200);
+                coin2.Location = new Point(x, 0);
+            }
+
+            if (car.Bounds.IntersectsWith(coin3.Bounds))
+            {
+                collectedCoin++;
+                label1.Text = "Coins=" + collectedCoin.ToString();
+                x = r.Next(100, 350);
+                coin3.Location = new Point(x, 0);
+            }
+
+            if (car.Bounds.IntersectsWith(coin4.Bounds))
+            {
+                collectedCoin++;
+                label1.Text = "Coins=" + collectedCoin.ToString();
+                x = r.Next(0, 400);
+                coin4.Location = new Point(x, 0);
+            }
+        }
+
         private void timer1_Tick(object sender, EventArgs e)
         {
             moveLine(gameSpeed);
             enemy(gameSpeed);
             gameOver();
             coins(gameSpeed);
+            coinsCollection();
         }
+
+        int collectedCoin = 0;
 
         int gameSpeed = 0;
         private void Form1_KeyDown(object sender, KeyEventArgs e)
@@ -129,12 +188,12 @@ namespace CarRacing
             if (e.KeyCode == Keys.Left)
             {
                 if(car.Left>0)
-                car.Left += -8;
+                car.Left += -11;
             }
             if (e.KeyCode == Keys.Right)
             {
                 if(car.Right<280)
-                car.Left += 8;
+                car.Left += 11;
             }
 
             if (e.KeyCode == Keys.Up)
