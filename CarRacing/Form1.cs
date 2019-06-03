@@ -15,6 +15,7 @@ namespace CarRacing
         public Form1()
         {
             InitializeComponent();
+            Over.Visible = false;
         }
 
         private void pictureBox3_Click(object sender, EventArgs e)
@@ -26,6 +27,44 @@ namespace CarRacing
         {
             
         }
+
+        Random r = new Random();
+        int x, y;
+
+        void enemy(int speed)
+        {
+            if (enemy1.Top >= 500)
+            {
+                x = r.Next(0, 100);
+                enemy1.Location = new Point(x, 0);
+            }
+            else enemy1.Top += speed;
+
+            if (enemy2.Top >= 500)
+            {
+                x = r.Next(0, 200);
+                enemy2.Location = new Point(x, 0);
+            }
+            else enemy2.Top += speed;
+
+            if (enemy3.Top >= 500)
+            {
+                x = r.Next(100, 175);
+                enemy3.Location = new Point(x, 0);
+            }
+            else enemy3.Top += speed;
+        }
+
+        void coins(int speed)
+        {
+            if (coin1.Top >= 500)
+            {
+                x = r.Next(0, 100);
+                coin1.Location = new Point(x, 0);
+            }
+            else coin1.Top += speed;
+        }
+            
 
         void moveLine(int speed)
         {
@@ -55,9 +94,33 @@ namespace CarRacing
 
         }
 
+        void gameOver()
+        {
+            if (car.Bounds.IntersectsWith(enemy1.Bounds))
+            {
+                timer1.Enabled = false;
+                Over.Visible = true;
+            }
+
+            if (car.Bounds.IntersectsWith(enemy2.Bounds))
+            {
+                timer1.Enabled = false;
+                Over.Visible = true;
+            }
+
+            if (car.Bounds.IntersectsWith(enemy3.Bounds))
+            {
+                timer1.Enabled = false;
+                Over.Visible = true;
+            }
+        }
+
         private void timer1_Tick(object sender, EventArgs e)
         {
             moveLine(gameSpeed);
+            enemy(gameSpeed);
+            gameOver();
+            coins(gameSpeed);
         }
 
         int gameSpeed = 0;
